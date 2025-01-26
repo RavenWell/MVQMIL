@@ -1,0 +1,330 @@
+wandb_version: 1
+
+datasets:
+  desc: null
+  value: camelyon16
+dataset_root:
+  desc: null
+  value: ./data/CAMELYON16 R50
+tcga_max_patch:
+  desc: null
+  value: -1
+fix_loader_random:
+  desc: null
+  value: true
+fix_train_random:
+  desc: null
+  value: true
+val_ratio:
+  desc: null
+  value: 0
+cv_fold:
+  desc: null
+  value: 3
+persistence:
+  desc: null
+  value: false
+same_psize:
+  desc: null
+  value: 0
+tcga_sub:
+  desc: null
+  value: nsclc
+auto_resume:
+  desc: null
+  value: false
+num_epoch:
+  desc: null
+  value: 200
+early_stopping:
+  desc: null
+  value: true
+max_epoch:
+  desc: null
+  value: 130
+input_dim:
+  desc: null
+  value: 1024
+n_classes:
+  desc: null
+  value: 2
+batch_size:
+  desc: null
+  value: 1
+num_workers:
+  desc: null
+  value: 2
+loss:
+  desc: null
+  value: ce
+save_best_model_stage:
+  desc: null
+  value: 0.0
+lr_sche:
+  desc: null
+  value: cosine
+lr_supi:
+  desc: null
+  value: false
+weight_decay:
+  desc: null
+  value: 1.0e-05
+accumulation_steps:
+  desc: null
+  value: 1
+clip_grad:
+  desc: null
+  value: 0.0
+always_test:
+  desc: null
+  value: false
+seed:
+  desc: null
+  value: 2023
+fold_start:
+  desc: null
+  value: 0
+opt:
+  desc: null
+  value: ''
+vqlr:
+  desc: null
+  value: 0.0002
+lr:
+  desc: null
+  value: 0.0002
+cls_alpha:
+  desc: null
+  value: 0.5
+aux_alpha:
+  desc: null
+  value: 0.5
+model:
+  desc: null
+  value: vqmil
+dim:
+  desc: null
+  value: 512
+n_code:
+  desc: null
+  value: 256
+beta:
+  desc: null
+  value:
+  - 1
+  - 0.3
+init_epoch:
+  desc: null
+  value: 0
+sgd_mode:
+  desc: null
+  value: MSCB_c
+k:
+  desc: null
+  value: 4
+key_coe:
+  desc: null
+  value: 0.6
+key_ins:
+  desc: null
+  value: true
+loss_mode:
+  desc: null
+  value: mse
+n_smat:
+  desc: null
+  value: 4
+vqe:
+  desc: null
+  value: true
+vqe_k:
+  desc: null
+  value: 9
+vqe_bias:
+  desc: null
+  value: true
+vqe_drop:
+  desc: null
+  value: 0.1
+head:
+  desc: null
+  value: 8
+qkv_bias:
+  desc: null
+  value: true
+attn_drop:
+  desc: null
+  value: 0.25
+proj_drop:
+  desc: null
+  value: 0.25
+global_act:
+  desc: null
+  value: relu
+region_num:
+  desc: null
+  value: 8
+all_shortcut:
+  desc: null
+  value: true
+da_act:
+  desc: null
+  value: tanh
+da_gated:
+  desc: null
+  value: true
+da_bias:
+  desc: null
+  value: false
+da_dropout:
+  desc: null
+  value: false
+ds_average:
+  desc: null
+  value: false
+only_rrt_enc:
+  desc: null
+  value: false
+act:
+  desc: null
+  value: relu
+dropout:
+  desc: null
+  value: 0.25
+attn:
+  desc: null
+  value: rmsa
+pool:
+  desc: null
+  value: attn
+ffn:
+  desc: null
+  value: false
+n_trans_layers:
+  desc: null
+  value: 2
+mlp_ratio:
+  desc: null
+  value: 4.0
+region_attn:
+  desc: null
+  value: native
+min_region_num:
+  desc: null
+  value: 0
+trans_dim:
+  desc: null
+  value: 64
+n_heads:
+  desc: null
+  value: 8
+trans_drop_out:
+  desc: null
+  value: 0.1
+drop_path:
+  desc: null
+  value: 0.0
+pos:
+  desc: null
+  value: none
+pos_pos:
+  desc: null
+  value: 0
+peg_k:
+  desc: null
+  value: 7
+peg_1d:
+  desc: null
+  value: false
+epeg:
+  desc: null
+  value: true
+epeg_bias:
+  desc: null
+  value: true
+epeg_2d:
+  desc: null
+  value: false
+epeg_k:
+  desc: null
+  value: 15
+epeg_type:
+  desc: null
+  value: attn
+cr_msa:
+  desc: null
+  value: true
+crmsa_k:
+  desc: null
+  value: 3
+crmsa_heads:
+  desc: null
+  value: 8
+crmsa_mlp:
+  desc: null
+  value: false
+patch_shuffle:
+  desc: null
+  value: false
+group_shuffle:
+  desc: null
+  value: false
+shuffle_group:
+  desc: null
+  value: 0
+title:
+  desc: null
+  value: vqmil__2023_1
+project:
+  desc: null
+  value: Fin_camelyon16
+log_iter:
+  desc: null
+  value: 100
+amp:
+  desc: null
+  value: false
+wandb:
+  desc: null
+  value: true
+no_log:
+  desc: null
+  value: false
+model_path:
+  desc: null
+  value: results/Fin_camelyon16/vqmil__2023_1
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.9
+    cli_version: 0.16.6
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1737657088.0
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 49
+      - 53
+      - 55
+      - 63
+      2:
+      - 1
+      - 5
+      - 41
+      - 49
+      - 53
+      - 55
+      - 63
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.10.9
+      5: 0.16.6
+      8:
+      - 5
+      13: linux-x86_64
