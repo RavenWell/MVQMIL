@@ -1,0 +1,35 @@
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_setup.py:_flush():76] Configure stats pid to 4044642
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_setup.py:_flush():76] Loading settings from /home/weirw22/.config/wandb/settings
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_setup.py:_flush():76] Loading settings from /home/weirw22/VQ-MIL-master/wandb/settings
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main_0.py', 'program_abspath': '/home/weirw22/VQ-MIL-master/main_0.py', 'program': '/home/weirw22/VQ-MIL-master/main_0.py'}
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_setup.py:_flush():76] Applying login settings: {}
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_init.py:_log_setup():521] Logging user logs to results/Fin_camelyon16/vqmil__2021_0/wandb/run-20250123_224823-reqa9bts/logs/debug.log
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_init.py:_log_setup():522] Logging internal logs to results/Fin_camelyon16/vqmil__2021_0/wandb/run-20250123_224823-reqa9bts/logs/debug-internal.log
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_init.py:init():561] calling init triggers
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'datasets': 'camelyon16', 'dataset_root': './data/CAMELYON16 R50', 'tcga_max_patch': -1, 'fix_loader_random': True, 'fix_train_random': True, 'val_ratio': 0, 'cv_fold': 3, 'persistence': False, 'same_psize': 0, 'tcga_sub': 'nsclc', 'auto_resume': False, 'num_epoch': 200, 'early_stopping': True, 'max_epoch': 130, 'input_dim': 1024, 'n_classes': 2, 'batch_size': 1, 'num_workers': 2, 'loss': 'ce', 'save_best_model_stage': 0.0, 'lr_sche': 'cosine', 'lr_supi': False, 'weight_decay': 1e-05, 'accumulation_steps': 1, 'clip_grad': 0.0, 'always_test': False, 'seed': 2021, 'fold_start': 0, 'opt': '', 'vqlr': 0.0002, 'lr': 0.0002, 'cls_alpha': 0.5, 'aux_alpha': 0.5, 'model': 'vqmil', 'dim': 512, 'n_code': 256, 'beta': [1, 0.3], 'init_epoch': 0, 'sgd_mode': 'MSCB_c', 'k': 4, 'key_coe': 0.6, 'key_ins': True, 'loss_mode': 'mse', 'n_smat': 4, 'vqe': True, 'vqe_k': 9, 'vqe_bias': True, 'vqe_drop': 0.1, 'head': 8, 'qkv_bias': True, 'attn_drop': 0.25, 'proj_drop': 0.25, 'global_act': 'relu', 'region_num': 8, 'all_shortcut': True, 'da_act': 'tanh', 'da_gated': True, 'da_bias': False, 'da_dropout': False, 'ds_average': False, 'only_rrt_enc': False, 'act': 'relu', 'dropout': 0.25, 'attn': 'rmsa', 'pool': 'attn', 'ffn': False, 'n_trans_layers': 2, 'mlp_ratio': 4.0, 'region_attn': 'native', 'min_region_num': 0, 'trans_dim': 64, 'n_heads': 8, 'trans_drop_out': 0.1, 'drop_path': 0.0, 'pos': 'none', 'pos_pos': 0, 'peg_k': 7, 'peg_1d': False, 'epeg': True, 'epeg_bias': True, 'epeg_2d': False, 'epeg_k': 15, 'epeg_type': 'attn', 'cr_msa': True, 'crmsa_k': 3, 'crmsa_heads': 8, 'crmsa_mlp': False, 'patch_shuffle': False, 'group_shuffle': False, 'shuffle_group': 0, 'title': 'vqmil__2021_0', 'project': 'Fin_camelyon16', 'log_iter': 100, 'amp': False, 'wandb': True, 'no_log': False, 'model_path': 'results/Fin_camelyon16/vqmil__2021_0'}
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_init.py:init():611] starting backend
+2025-01-23 22:48:23,051 INFO    MainThread:4044642 [wandb_init.py:init():615] setting up manager
+2025-01-23 22:48:23,052 INFO    MainThread:4044642 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-23 22:48:23,053 INFO    MainThread:4044642 [wandb_init.py:init():623] backend started and connected
+2025-01-23 22:48:23,055 INFO    MainThread:4044642 [wandb_init.py:init():715] updated telemetry
+2025-01-23 22:48:23,056 INFO    MainThread:4044642 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2025-01-23 22:48:23,823 INFO    MainThread:4044642 [wandb_run.py:_on_init():2357] communicating current version
+2025-01-23 22:48:24,827 INFO    MainThread:4044642 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.19.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-01-23 22:48:24,827 INFO    MainThread:4044642 [wandb_init.py:init():799] starting run threads in backend
+2025-01-23 22:48:27,122 INFO    MainThread:4044642 [wandb_run.py:_console_start():2335] atexit reg
+2025-01-23 22:48:27,122 INFO    MainThread:4044642 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2025-01-23 22:48:27,122 INFO    MainThread:4044642 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2025-01-23 22:48:27,122 INFO    MainThread:4044642 [wandb_run.py:_redirect():2280] Redirects installed.
+2025-01-23 22:48:27,123 INFO    MainThread:4044642 [wandb_init.py:init():842] run started, returning control to user process
+2025-01-24 02:10:31,566 INFO    MainThread:4044642 [wandb_run.py:_finish():2064] finishing run 1489085139/fin_camelyon16/reqa9bts
+2025-01-24 02:10:31,567 INFO    MainThread:4044642 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2025-01-24 02:10:31,567 INFO    MainThread:4044642 [wandb_run.py:_restore():2287] restore
+2025-01-24 02:10:31,567 INFO    MainThread:4044642 [wandb_run.py:_restore():2293] restore done
+2025-01-24 02:11:18,156 INFO    MainThread:4044642 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2025-01-24 02:11:18,160 INFO    MainThread:4044642 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2025-01-24 02:11:18,166 INFO    MainThread:4044642 [wandb_run.py:_footer_sync_info():3895] logging synced files
